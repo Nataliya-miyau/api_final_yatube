@@ -41,7 +41,7 @@ pip install -r requirements.txt
 python3.7 manage.py migrate
 ```
 
-Далее создадим суперпользователя:
+Создайте суперпользователя:
 
 ```
 python manage.py createsuperuser
@@ -62,6 +62,8 @@ POST /api/v1/posts/
 
 в body { "text": "string", "image": "string", "group": 0 }
 ```
+пример ответа:
+
 
 - обновление публикации
 
