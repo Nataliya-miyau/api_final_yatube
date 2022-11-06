@@ -59,23 +59,38 @@ python3.7 manage.py runserver
 
 ```
 POST /api/v1/posts/
-
-в body { "text": "string", "image": "string", "group": 0 }
 ```
 пример ответа:
 
+```
+[
+  {
+    "text": "string",
+    "image": "string",
+    "group": 0
+  }
+]
+ ```
 
-- обновление публикации
+- обновление публикации, полное и частичное
 
 ```
 PUT /api/v1/posts/{id}/
 
-в body { "text": "string", "image": "string", "group": 0 }
-
 PATCH /api/v1/posts/{id}/
-
-в body { "text": "string", "image": "string", "group": 0 }
 ```
+
+пример ответа:
+
+```
+[
+  {
+    "text": "string",
+    "image": "string",
+    "group": 0
+  }
+]
+ ```
 
 - удаление публикации
 
